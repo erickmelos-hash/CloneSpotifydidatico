@@ -4,20 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin - Upload</title>
+    <link rel="stylesheet" href="../css/admin.css">
 </head>
 <body>
     <header><H1>SongArchive</H1></header>
     <main>
         <div>
-            <input type="text" id="song" placeholder="Song Name">
+            <input type="text" id="title" placeholder="Song Name">
+
             <input type="text" id="artist" placeholder="Song Artist">
-            <input type="number" id="duration" placeholder="Song Duration">
+
+            <input type="file" id="cover" accept="image/*" hidden>
+            <label for="cover" class="upload-cover">Upload Cover</label>
+
+            <p id="songLink"></p>
+
             <button id="upload">Upload Musics</button>
         </div>
+
         <div>
-            <input type="file" id="musicArchive">
+            <input type="file" id="file" accept="audio/*" hidden>
+            <label for="file" class="upload-music">Put your Musics here</label>
         </div>
+
         <p id="message"></p>
+
+        <h2>Upload Songs</h2>
+
+        <ul id="musicList">
+            <li>Loading...</li>
+        </ul>
 
     </main>
     <footer>Upload your favorites songs</footer>

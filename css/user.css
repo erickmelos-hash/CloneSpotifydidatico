@@ -1,0 +1,14 @@
+#musicList li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+#musicList img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+}

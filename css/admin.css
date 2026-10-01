@@ -1,0 +1,33 @@
+.upload-cover,
+.upload-music {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.upload-cover {
+    background-color: #d94f70;
+    color: white;
+}
+
+.upload-music {
+    background-color: #4caf50;
+    color: white;
+}
+
+#musicList {
+    list-style: none;
+    padding: 0;
+}
+
+#musicList li {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+#musicList button {
+    margin-left: 15px;
+    cursor: pointer;
+}
