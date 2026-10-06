@@ -1,6 +1,6 @@
 console.log("ADMIN CARREGADO")
 
-import {database} from '/Js/firebaseConfig.js';
+import {database} from './firebaseConfig.js';
 import {ref, push, set, remove, onValue} from "https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js";
 
 console.log("Firebase carregado:", database)

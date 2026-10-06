@@ -1,4 +1,4 @@
-import { database } from '/Js/firebaseConfig.js';
+import { database } from './firebaseConfig.js';
 import { ref, onValue } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js";
 
 const songsFolder = ref(database, 'musics');
