@@ -1,7 +1,8 @@
-const CACHE_NAME = 'spotifai-shell-v1';
+const CACHE_NAME = 'spotifai-shell-v2';
 const APP_SHELL = [
-  './HTML/user.html',
-  './HTML/admin.html',
+  './index.html',
+  './user.html',
+  './admin.html',
   './css/global.css',
   './css/user.css',
   './Js/user.js',
@@ -44,7 +45,7 @@ self.addEventListener('fetch', (event) => {
           caches.open(CACHE_NAME).then((cache) => cache.put(request, copy));
           return response;
         })
-        .catch(async () => (await caches.match(request)) || caches.match('./HTML/user.html'))
+        .catch(async () => (await caches.match(request)) || caches.match('./user.html'))
     );
     return;
   }

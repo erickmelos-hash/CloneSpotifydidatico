@@ -1,9 +1,9 @@
 {
-  "id": "./HTML/user.html",
+  "id": "./user.html",
   "name": "Spotifai Music Player",
   "short_name": "Spotifai",
   "description": "Listen to music in your personal music library.",
-  "start_url": "./HTML/user.html",
+  "start_url": "./user.html",
   "scope": "./",
   "display": "standalone",
   "background_color": "#101110",

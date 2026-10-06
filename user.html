@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotifai - Player</title>
     <meta name="theme-color" content="#101110">
-    <link rel="manifest" href="../manifest.webmanifest">
-    <link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/user.css">
+    <link rel="manifest" href="./manifest.webmanifest">
+    <link rel="icon" href="./assets/icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/user.css">
 </head>
 <body>
     <main>
@@ -23,11 +23,11 @@
             <audio id="player" controls style = "width: 20%"></audio>
         </div>
     </main>
-    <script type="module" src="../Js/user.js"></script>
+    <script type="module" src="./Js/user.js"></script>
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('../service-worker.js', { scope: '../' })
+                navigator.serviceWorker.register('./service-worker.js', { scope: './' })
                     .catch((error) => console.error('Service worker registration failed:', error));
             });
         }
